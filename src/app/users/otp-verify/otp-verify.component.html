@@ -1,0 +1,42 @@
+<!-- Otp Verify Pages -->
+<div class="container h-100" style="margin-top: -50px; margin-bottom: -140px; ">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png"
+                        class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center form_container">
+                <form [formGroup]="userVerify" (ngSubmit)="onSubmit()">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" formControlName="userOtp" class="form-control input_user" value=""
+                            placeholder="Enter Otp " [ngClass]="{'is-invalid' : submitted && f.userOtp.errors}">
+                        <div *ngIf="!f.userOtp?.valid && (f.userOtp?.touched || f.userOtp?.dirty)"
+                            class="invalid-feedback" style="display: block;">
+                            <div *ngIf="f.userOtp.errors.minlength"><span>Otp Should be of 6 digit</span></div>
+                            <div *ngIf="f.userOtp.errors.required"><span style="color: red;">Please Enter
+                                    6 digit OTP send On your gmail</span></div>
+
+                        </div>
+                    </div>
+                  
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                        <button [disabled]="!userVerify.valid" class="btn login_btn">Verify</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? <a href="#" [routerLink]="'/register'"class="ml-2">Sign Up</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>

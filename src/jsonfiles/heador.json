@@ -1,0 +1,52 @@
+list_of_products:JSON={
+
+    category1:[
+        
+            {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+            {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+            {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+            {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+            {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+            {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    
+        
+    ],
+    category2:[
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+
+    ],
+    category3:[
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+
+    ]
+    category4:[
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+
+    ],
+    category4:[
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+        {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+
+    ],
+
+
+}

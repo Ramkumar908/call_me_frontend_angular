@@ -1,0 +1,36 @@
+{
+    "productDetails":[
+    {
+        "id":1,
+        "name":"Mohan Kumar",
+        "wrkerType":"Plumber",
+        "experience":4,
+        "priceHourly":250,
+        "city":"Patna",
+        "availability":"Yes",
+        "image1":"plumber1.jpg",
+        "image2":"plumber2.jpg",
+        "image3":"plumber3.jpg",
+        "image4":"plumber4.jpg",
+        "image5":"plumber5.jpg"
+
+    }
+    ],
+    "similarProductDetails":[
+        {
+         "id":2,
+        "name":"Deepak Kumar",
+        "wrkerType":"Painter",
+        "experience":2,
+        "priceHourly":350,
+        "city":"Chandigarh",
+        "availability":"Yes",
+        "image1":"electrician1.jpg",
+        "image2":"electrician2.jpg",
+        "image3":"electrician3.jpg",
+        "image4":"electrician4.jpg",
+        "image5":"electrician5.jpg"
+        }
+    ]
+    
+}

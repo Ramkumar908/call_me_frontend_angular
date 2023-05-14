@@ -1,0 +1,206 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="side" #sidenav  mode="over" position="start">
+    <mat-nav-list>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/profile'" >
+          <h3><img src="assets/images/helper/gamer.png"  width="40px"></h3>
+        </a>
+        <!-- <a mat-list-item [routerLink]="'/home'" >
+          <h3><span style="float: left;"><img src="assets/images/helper/gamer.png" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;Home</span></h3>
+        </a> -->
+      </mat-list-item>
+      <hr>
+      <h3 style="font-weight: bold;margin-left: 10px;">Essential Worker</h3>
+      <mat-list-item>
+        <a mat-list-item  (click)="callAllpainters('painters')" >
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Painter</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item   (click)="callAllpainters('electrician')">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon2.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Electrician</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        
+        <a mat-list-item  (click)="callAllpainters('plumbers')">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Plumber</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item (click)="callAllpainters('civil')">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Civil Worker</span></h3>
+        </a>
+      </mat-list-item>
+      <hr>
+      <h3 style="font-weight: bold;margin-left: 10px;">Home Tutor</h3>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Medium School</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;High School</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Technical Tutor</span></h3>
+        </a>
+      </mat-list-item>
+      <hr>
+      <h3 style="font-weight: bold;margin-left: 10px;">Daily Wage Worker</h3>
+     <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Cook</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Mali</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Decorator</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Cleaner</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/categoryicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Other Helper</span></h3>
+        </a>
+      </mat-list-item>
+      <hr>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/aboutUs'">
+          <h3><span style="float: left;"><img src="assets/images/abouticon.svg" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;About</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/contactUs'">
+          <h3><span style="float: left;"><img src="assets/images/contacticon.svg" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Contact</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/login'">
+          <h3><span style="float: left;"><img src="assets/images/loginicon.svg" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;Login</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/register'">
+          <h3><span style="float: left;"><img src="assets/images/regicon.svg" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;Register</span></h3>
+        </a>
+      </mat-list-item>
+      <hr>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/facebookicon.png" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;Facebook</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/twittericon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Twitter</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/linkedinicon.png" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;Linkdin</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/instagramicon.png" width="24px"
+                height="24px"></span><span style="font-weight: bold;">&nbsp;&nbsp;Instagram</span></h3>
+        </a>
+      </mat-list-item>
+      <hr>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/accounts'">
+          <h3><span style="float: left;"><img src="assets/images/help.png" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;Help</span></h3>
+        </a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item [routerLink]="'/logout'">
+          <h3><span style="float: left;"><img src="assets/images/logouticon.png" width="24px" height="24px"></span><span
+              style="font-weight: bold;">&nbsp;&nbsp;LogOut</span></h3>
+        </a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="warn">
+      <div fxShow=true>
+        <mat-toolbar-row>
+          <button mat-icon-button class="example-icon" (click)="sidenav.toggle()"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+          
+          <a href="/home"><h1 class="text-left p-3 heading text-light">JustCall</h1></a>
+          <div fxShow="true" fxHide.lt-md="true" style="padding: 10px; margin-top: 15px; padding-left:285px;">
+    
+            <input matInput type="search" placeholder="search here" class="search-input">
+            <button class="btn btn-dark" style="margin-bottom: 5px;"><i class="fa fa-search"
+                aria-hidden="true"></i></button>
+            <span class="example-spacer"></span>
+            <a href="#" mat-button ><h1 class="text-left p-3 heading text-light">Accounts</h1></a>
+            <a href="#" mat-button><h1 class="text-left p-3 heading text-light">Service</h1></a>
+            <a href="#" mat-button><h1 class="text-left p-3 heading text-light">About us</h1></a>
+            <a href="#" mat-button><h1 class="text-left p-3 heading text-light">Contact us</h1></a>
+            <a href="#" mat-button><h1 class="text-left p-3 heading text-light">Login</h1></a>
+
+           
+            <!-- <a href="/home" style="margin-left: 100px;"><h1 class="text-left p-3 heading text-light">Accounts</h1></a>
+            <a href="/home" style="margin-left: 100px;"><h1 class="text-left p-3 heading text-light">About Us</h1></a>
+            <a href="/home" style="margin-left: 100px;"><h1 class="text-left p-3 heading text-light">Cotact Us</h1></a> -->
+
+
+          </div>
+        </mat-toolbar-row>
+    
+      </div>
+      <div fxShow="false" fxShow.lt-md="true" style="padding-left: 0;">
+        <mat-toolbar-row>
+          <input matInput type="search" placeholder="search here" class="search-input">
+          <button class="btn btn-dark" style="margin-bottom: 5px;"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </mat-toolbar-row>
+      </div>
+  
+    </mat-toolbar>
+    
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+

@@ -1,0 +1,73 @@
+<div class="container h-100" class="content-main">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png"
+                        class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center form_container">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" formControlName="username" class="form-control input_user" value=""
+                            placeholder="username" [ngClass]="{'in-valid':submitted && f.username.errors}">
+                        <div *ngIf="!f.username?.valid &&(f.username?.touched || f.username?.dirty)"
+                            class="invalid-feedback" style="display: block;">
+                            <div *ngIf="f.username.errors.required"><span style="color: red;">Please Enter
+                                    Username</span></div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input [type]="showPassword? 'text' :'password' " formControlName="password"
+                            class="form-control input_pass" value="" placeholder="password"
+                            [ngClass]="{'is-invalid' : submitted && f.password.errors}">
+                        <button (click)="togglePasswordVisibility()">
+                            <i class="fa fa-eye" aria-hidden="true" *ngIf="!showPassword"></i>
+                            <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="showPassword"></i>
+                        </button>
+                        <div *ngIf="!f.password?.valid && (f.password?.touched || f.password?.dirty)"
+                            class="invalid-feedback" style="display: block;">
+                            <div *ngIf="f.password.errors.required"><span style="color: red;">Password is required
+                                    login</span></div>
+                            <div *ngIf="f.password.errors.minlength"><span style="color: red;">Password length should be
+                                    more than 6</span> </div>
+
+                           
+    
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" formControlName="rememberMe" class="custom-control-input" id="customControlInline">
+                            <label class="custom-control-label" for="customControlInline">Accept Terms & conditions</label>
+                            <div *ngIf="!f.rememberMe?.valid && (f.rememberMe?.touched || f.rememberMe?.dirty)"
+                            class="invalid-feedback" style="display: block;">
+                            <div *ngIf="f.rememberMe.errors.required"><span style="color: red;">Please accept our Terms and Condition</span></div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                        <button [disabled]="!loginForm.valid" class="btn login_btn">Login</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-4">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? <a href="#"[routerLink]="'/register'" class="ml-2">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center links">
+                    <a href="#" [routerLink]="'/forget_user'">Forgot your password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

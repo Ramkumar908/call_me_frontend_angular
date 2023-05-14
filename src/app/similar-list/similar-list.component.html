@@ -1,0 +1,359 @@
+<!-- Here we design a simple category wise detail with responsive design-->
+
+
+
+<div class="container">
+
+
+    <div class="row" style="border: px solid rgb(245, 245, 245);">
+        <div class="col">
+            <span style="font-size: medium;">
+                <h3 style="color: black; text-align: center;"><b>Similar Products</b></h3>
+            </span>
+        </div>
+    </div>
+
+    <div class="contaiener" style="background-color:rgb(253, 255, 238);">
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: purple;font-weight: bold;display: inline;float: left;text-align: center;">All {{categoryName}} Near You</h3>
+                    
+    
+                </span>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <div class="row" style="margin-left:5px; margin-right:5px;">
+    
+            <div class="col" style="margin: 0px;padding: 0px;">
+    
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                        <div fxFlex="25%" fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="25%"
+                            *ngFor="let image of categoryarray1">
+                            <mat-card (click)="getImageDetails(image.id,image.category_name)">
+    
+                                <img mat-card-image src="assets/images/helper/{{image.imageUrl}}">
+                                <mat-card-content>
+                                    <span style="color: hsl(286, 91%, 34%);"><b>{{image.name}}</b></span><br>
+                                    <h2>{{image.price|currency:'INR'}}</h2>
+    
+                                </mat-card-content>
+                                 <mat-card-action>
+                                     <button mat-raised-button color="warn" (click)="getImageDetails(image.id,image.category_name)">check Detail</button>
+                                    <!-- <button mat-raised-button color="warn"  style="float: right">Warn</button> -->
+                              </mat-card-action>
+                            </mat-card>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+    
+            </div>
+    
+        </div>
+    
+    
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: black;display: inline;float: left;"></h3>
+                    <h3></h3>
+    
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br>
+    <hr>
+    <div class="row" style="border: px solid rgb(245, 245, 245);">
+        <div class="col">
+            <span style="font-size: medium;">
+                <h3 style="color: black; text-align: center;"><b>Other Related workers Near about you</b></h3>
+
+            </span>
+        </div>
+    </div>
+
+    <div class="contaiener" style="background-color:rgb(253, 255, 238);">
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: purple;font-weight: bold;display: inline;float: left;text-align: center;"><b>Other Helper Near You</b></h3>
+                   
+    
+                </span>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <div class="row" style="margin-left:5px; margin-right:5px;">
+    
+            <div class="col" style="margin: 0px;padding: 0px;">
+    
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                        <div fxFlex="25%" fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="25%"
+                            *ngFor="let image of categoryarray2">
+                            <mat-card (click)="getImageDetails(image.id,image.category_name)">
+    
+                                <img mat-card-image src="assets/images/helper/{{image.imageUrl}}">
+                                <mat-card-content>
+                                    <span style="color: hsl(286, 91%, 34%);"><b>{{image.name}}</b></span><br>
+                                    <h2>{{image.price|currency:'INR'}}</h2>
+    
+                                </mat-card-content>
+                                <mat-card-action>
+                                    <button mat-raised-button color="warn" (click)="getImageDetails(image.id,image.category_name)">check Detail</button>
+                                   <!-- <button mat-raised-button color="warn"  style="float: right">Warn</button> -->
+                               </mat-card-action>         
+                            </mat-card>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+    
+            </div>
+    
+        </div>
+    
+    
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: black;display: inline;float: left;"></h3>
+                    <h3></h3>
+    
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <div class="contaiener" style="background-color:rgb(253, 255, 238);">
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: purple;font-weight: bold;display: inline;float: left;text-align: center;"><b>Other Helper Near You</b></h3>
+                   
+    
+                </span>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <div class="row" style="margin-left:5px; margin-right:5px;">
+    
+            <div class="col" style="margin: 0px;padding: 0px;">
+    
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                        <div fxFlex="25%" fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="25%"
+                            *ngFor="let image of categoryarray3">
+                            <mat-card  (click)="getImageDetails(image.id,image.category_name)">
+    
+                                <img mat-card-image src="assets/images/helper/{{image.imageUrl}}">
+                                <mat-card-content>
+                                    <span style="color: hsl(286, 91%, 34%);"><b>{{image.name}}</b></span><br>
+                                    <h2>{{image.price|currency:'INR'}}</h2>
+    
+                                </mat-card-content>
+                                <mat-card-action>
+                                    <button mat-raised-button color="warn" (click)="getImageDetails(image.id,image.category_name)">check Detail</button>
+                                   <!-- <button mat-raised-button color="warn"  style="float: right">Warn</button> -->
+                               </mat-card-action>         
+                            </mat-card>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+    
+            </div>
+    
+        </div>
+    
+    
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: black;display: inline;float: left;"></h3>
+                    <h3></h3>
+    
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <div class="contaiener" style="background-color:rgb(253, 255, 238);">
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: purple;font-weight: bold;display: inline;float: left;text-align: center;"><b>Other Helper Near you</b></h3>
+                    
+                </span>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <div class="row" style="margin-left:5px; margin-right:5px;">
+    
+            <div class="col" style="margin: 0px;padding: 0px;">
+    
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                        <div fxFlex="25%" fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="25%"
+                            *ngFor="let image of categoryarray4">
+                            <mat-card (click)="getImageDetails(image.id,image.category_name)" >
+    
+                                <img mat-card-image src="assets/images/helper/{{image.imageUrl}}">
+                                <mat-card-content>
+                                    <span style="color: hsl(286, 91%, 34%);"><b>{{image.name}}</b></span><br>
+                                    <h2>{{image.price|currency:'INR'}}</h2>
+    
+                                </mat-card-content>
+                                <mat-card-action>
+                                    <button mat-raised-button color="warn" (click)="getImageDetails(image.id,image.category_name)">check Detail</button>
+                                   <!-- <button mat-raised-button color="warn"  style="float: right">Warn</button> -->
+                               </mat-card-action>         
+                            </mat-card>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+    
+            </div>
+    
+        </div>
+    
+    
+        <div class="row" style="border: 3px solid rgb(245, 245, 245);">
+            <div class="col">
+                <span style="font-size: medium;padding-left: 10px;">
+                    <h3 style="color: black;display: inline;float: left;"></h3>
+                    <h3></h3>
+    
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+ 
+
+
+    <br>
+    <hr>
+
+
+
+</div>
+
+
+<!-- <mat-toolbar >
+    <div fxShow=true>
+        <mat-toolbar-row >
+            <button mat-icon-button class="example-icon" (click)="sidenav.toggle()"
+                aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span [ngStyle]="{'color':headingtext?'black':'red'}">&nbsp; &nbsp;&nbsp; &nbsp;<b>Car O Bar </b></span>
+            <div  fxShow="true" fxHide.lt-md="true" style="padding: 10px; margin-top: 15px; padding-left:285px;">
+
+                <input matInput type="search" placeholder="search here" class="search-input">
+                <button class="btn btn-dark" style="margin-bottom: 5px;"><i class="fa fa-search"
+                        aria-hidden="true"></i></button>
+                <span class="example-spacer"></span>
+                <a href="#" mat-button style="margin-left: 100;"><span>&nbsp; &nbsp;&nbsp;
+                        &nbsp;<b>Service</b></span></a>
+                <a  mat-button style="margin-left: 100;"><span>&nbsp;<b>Account </b></span></a>
+            </div>
+        </mat-toolbar-row>
+
+    </div>
+    <div fxShow="false" fxShow.lt-md="true" style="padding-left: 0;">
+        <mat-toolbar-row>
+            <input matInput type="search" placeholder="search here" class="search-input">
+            <button class="btn btn-dark" style="margin-bottom: 5px;"><i class="fa fa-search"
+                    aria-hidden="true"></i></button>
+        </mat-toolbar-row>
+    </div>
+</mat-toolbar>
+<div class="container">
+    <div class="row" style="border: 1px solid whitesmoke;">
+        <div class="col" style="padding: 10px;">
+            <span  style="font-size: medium;"><h2 style="color: black;"><b>Similar car model</b></h2></span>
+        </div>
+    </div>
+
+    <div class=row>
+        <div class="col" style="background-color:whitesmoke">
+            <div class="content">
+                <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                    <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="33%"
+                        *ngFor="let car of  categoryarray"(click)="sendDetailPage(car)">
+                
+                        <mat-card class="mat-elevation-z4">
+                            <mat-card-header> 
+                                <mat-card-title>Hyndai</mat-card-title>
+                            </mat-card-header>
+                            <img mat-card-image src="assets/{{car.imageUrl}}">
+                            <mat-card-content>
+                                <span style="color: hsl(286, 91%, 34%);"><b>{{car.name}}</b></span><br>
+                                <h2><i class="fa fa-inr">{{car.price|currency:'INR'}}</i></h2>
+
+                             </mat-card-content>
+                             <mat-card-action>
+                            
+                                <button class="btn btn-primary" style="width: fit-content;">Check detail</button>
+                                <button mat-stroked-button color="primary" (click)="sendDetailPage()">get detail</button>
+
+
+                             </mat-card-action>
+
+
+                        </mat-card>
+                    </div>
+                </div>
+
+            </div>
+       </div>
+</div>
+
+</div>  -->

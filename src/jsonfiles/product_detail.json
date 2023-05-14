@@ -1,0 +1,31 @@
+request={
+
+    "product_id":"pmod1"
+    "product_category":"category1",
+    "product_name":"product1"
+}
+
+
+response={
+
+
+    "product_detail":{
+        "product_name":"product1",
+        "product_priece":345,
+        "product_image":["imagepath1","imagepath2","imagepath3","imagepath4","imagepath5","imagepath6","imagepath7","imagepath8"],
+        "product_model":"new Model",
+        "Product_model_date":"year2017",
+        "Product_desc":"ddasdf",
+        "product_owner":"42542",
+        "product_address_availabilty":"sasdsdfsd",
+        "product_stock":"aailable"
+    },
+
+    "Similar_product_list":{"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    {"product_id":"pmod1","productname":"first_product","product_priece":234,"product_desc":"myproduct","product_image":"myimg1.jpg","product_category_name":"category1","product_offer_available":"true"},
+    
+}

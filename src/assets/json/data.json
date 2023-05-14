@@ -1,0 +1,200 @@
+{
+    "painters":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "painter1.jpg",
+        "type": "painter1.jpg",
+        "category_name":"painters"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "painter2.jpg",
+        "type": "new",
+        "category_name":"painters"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "painter3.jpg",
+        "type":"second_hand",
+        "category_name":"painters"
+    },
+    {
+        "id": 4,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "painter4.jpg",
+        "type":"second_hand",
+        "category_name":"painters"
+    },
+    {
+        "id": 5,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "painter5.jpg",
+        "type": "new",
+        "category_name":"painters"
+    },
+    {
+        "id": 6,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "painter6.jpg",
+        "type": "new",
+        "category_name":"painters"
+    },
+    {
+        "id": 7,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "painter7.jpg",
+        "type": "new",
+        "category_name":"painters"
+    },
+    {
+        "id": 8,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "painter8.jpg",
+        "type": "new",
+        "category_name":"painters"
+    }
+    
+    
+],
+    "electrician":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "electrician1.jpg",
+        "type": "second_hand",
+        "category_name":"electrician"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "electrician2.jpg",
+        "type": "new",
+        "category_name":"electrician"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "electrician3.jpg",
+        "type":"second_hand",
+        "category_name":"electrician"
+    },
+    {
+        "id": 4,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "electrician4.jpg",
+        "type":"second_hand",
+        "category_name":"electrician"
+    }
+    
+],
+
+    "plumber":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "plumber1.jpg",
+        "type": "second_hand",
+        "category_name":"plumber"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "plumber2.jpg",
+        "type": "new",
+        "category_name":"plumber"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "plumber3.jpg",
+        "type":"second_hand",
+        "category_name":"plumber"
+    },
+    {
+        "id": 4,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "plumber4.jpg",
+        "type":"second_hand",
+        "category_name":"plumber"
+    }
+    
+],
+"civilworker":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "civilworker1.jpg",
+        "type": "second_hand",
+        "category_name":"civilworker"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "civilworker2.jpg",
+        "type": "new",
+        "category_name":"civilworker"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "civilworker3.jpg",
+        "type":"second_hand",
+        "category_name":"civilworker"
+    },
+    {
+        "id": 4,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "civilworker4.jpg",
+        "type":"second_hand",
+        "category_name":"civilworker"
+    }
+    
+]
+
+
+
+
+}

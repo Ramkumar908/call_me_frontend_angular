@@ -1,0 +1,143 @@
+<div class="container">
+    <hr>
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+            <p class="text-center">Get started with your free account</p>
+            <p>
+                <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
+                    facebook</a>
+            </p>
+            <p class="divider-text">
+                <span class="bg-light">OR</span>
+            </p>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input formControlName="fullName" class="form-control" placeholder="Full name" type="text"
+                        [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }">
+                    <div *ngIf="!f.fullName?.valid && (f.fullName?.dirty ||f.fullName?.touched)"
+                        class="invalid-feedback" style="display: block;">
+                        <div *ngIf="f.fullName.errors.required "><span style="color: red;">Fullname is required</span>
+                        </div>
+                        <div *ngIf="f.fullName.errors.minlength"><span style="color: red;">minlength is 5</span></div>
+                    </div>
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input formControlName="email" class="form-control" placeholder="Email address" type="email"
+                        [ngClass]="{ 'is-invalid':submitted && f.email.errors}">
+                    <div *ngIf="!f.email?.valid && (f.email?.touched || f.email?.dirty)" class="invalid-feedback"
+                        style="display: block;">
+                        <div *ngIf="f.email.errors.required"><span style="color: red;">Email is required</span></div>
+                        <div *ngIf="f.email.errors.email"><span style="color: red;">Enter correct email</span></div>
+
+                    </div>
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    <select class="custom-select" style="max-width: 120px;">
+                        <option selected="">+91</option>
+                    </select>
+                    <input formControlName="phone" class="form-control" placeholder="Phone number" type="text"
+                        [ngClass]="{ 'is-invalid':submitted && f.phone.errors}">
+                    <div *ngIf="!f.phone?.valid && (f.phone?.touched || f.phone?.dirty)" class="invalid-feedback"
+                        style="display: block;">
+                        <div *ngIf="f.phone.errors.required"><span style="color: red;">Phone No can't be
+                                empty</span></div>
+                        <div *ngIf="f.phone.errors.pattern"><span style="color: red;"> No. 0 to 9</span> </div>
+                        <div *ngIf="f.phone.errors.maxlength"> <span style="color: red;">Max Length is 10</span>
+                        </div>
+                    </div>
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                    </div>
+                    <select class="form-control" Placeholder="User Type" formControlName="userType"
+                        [ngClass]="{'is-invalid':submitted && f.userType.errors}">
+                        <option selected=""> Select User type</option>
+                        <option>Job Seeker</option>
+                        <option>Job Creator</option>
+                        <option>Others</option>
+                    </select>
+                    <div *ngIf="!f.userType?.valid && (f.userType?.touched || f.userType?.dirty)"
+                        class="invalid-feedback" style="display: block;">
+                        <div *ngIf="f.userType.errors.required"><span style="color: red;"> Specify User Type</span>
+                        </div>
+                    </div>
+                </div> <!-- form-group end.// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input formControlName="password" class="form-control" placeholder="Create password"
+                        [type]="showPassword ? 'text' : 'password'"
+                        [ngClass]="{ 'is-invalid':submitted && f.password.errors}" (change)="onPasswordChange()">
+                    <button (click)="togglePasswordVisibility()">
+                        <i class="fa fa-eye" aria-hidden="true" *ngIf="!showPassword"></i>
+                        <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="showPassword"></i>
+                    </button>
+                    <div *ngIf="!f.password?.valid && (f.password?.touched || f.password?.dirty)"
+                        class="invalid-feedback" style="display: block;">
+                        <div *ngIf="f.password.errors.required"><span style="color: red;">Enter Password</span>
+                        </div>
+                        <div *ngIf="f.password.errors.minlength"><span style="color: red;"> Legth should be more than
+                                6</span></div>
+
+                    </div>
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input formControlName="repeatPassword" class="form-control" placeholder="Create password"
+                        [type]="showRepeatPassword ? 'text' : 'password'"
+                        [ngClass]="{ 'is-invalid':submitted && f.repeatPassword.errors}" (change)="onPasswordChange()">
+                    <button (click)="togglePasswordVisibility1()">
+                        <i class="fa fa-eye" aria-hidden="true" *ngIf="!showRepeatPassword"></i>
+                        <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="showRepeatPassword"></i>
+                    </button>
+                    <div *ngIf="!f.repeatPassword?.valid && (f.repeatPassword?.touched || f.repeatPassword?.dirty)"
+                        class="invalid-feedback" style="display: block;">
+                        <div *ngIf="f.repeatPassword.errors.required"><span style="color: red;">Enter Password Again</span>
+                        </div>
+                        <div *ngIf="f.repeatPassword.errors.minlength"><span style="color: red;"> Legth should be more than
+                                6</span></div>
+                                <div><span *ngIf="repeatPassword.hasError('mismatch')">Password do not match.</span></div>        
+
+                    </div>
+                </div> <!-- form-group// -->
+            
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" formControlName="rememberMe" class="custom-control-input" id="customControlInline">
+                        <label class="custom-control-label" for="customControlInline">Accept Terms & conditions</label>
+                        <div *ngIf="!f.rememberMe?.valid && (f.rememberMe?.touched || f.rememberMe?.dirty)"
+                        class="invalid-feedback" style="display: block;">
+                        <div *ngIf="f.rememberMe.errors.required"><span style="color: red;">Please accept our Terms and Condition</span></div>
+
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <button [disabled]="!registerForm.valid" class="btn btn-primary btn-block"> Create Account </button>
+                </div> <!-- form-group// -->
+                <p class="text-center">Have an account? <a href="#" [routerLink]="'/login'">Log In</a> </p>
+            </form>
+        </article>
+    </div> <!-- card.// -->
+
+</div>
+<!--container end.//-->
+
+<br><br>

@@ -1,0 +1,102 @@
+
+{
+    "mycategories":[
+        {
+    "category1":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "budgetcar7.jpg",
+        "type": "second_hand",
+        "category_name":"category1"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "budgetcar8.jpg",
+        "type": "new",
+        "category_name":"category1"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "budgetcar2.jpg",
+        "type":"second_hand",
+        "category_name":"category1"
+    }
+    
+],
+    "category2":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "budgetcar7.jpg",
+        "type": "second_hand",
+        "category_name":"category2"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "budgetcar8.jpg",
+        "type": "new",
+        "category_name":"category2"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "budgetcar2.jpg",
+        "type":"second_hand",
+        "category_name":"category2"
+    }
+    
+],
+
+    "category3":[
+    {
+        "id": 1,
+        "name": "Hyndai i10",
+        "model": "Hyndai i10",
+        "price": "170.00",
+        "imageUrl": "budgetcar7.jpg",
+        "type": "second_hand",
+        "category_name":"category3"
+    },
+    {
+        "id": 2,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "302.00",
+        "imageUrl": "budgetcar8.jpg",
+        "type": "new",
+        "category_name":"category3"
+    },
+    {
+        "id": 3,
+        "name": "Hyndai i20",
+        "model": "Hyndai i20",
+        "price": "279.00",
+        "imageUrl": "budgetcar2.jpg",
+        "type":"second_hand",
+        "category_name":"category3"
+    }
+    
+]
+        }
+
+    ]
+
+
+
+}

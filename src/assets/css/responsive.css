@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media(max-width: 1199px){
+}
+
+@media(max-width: 1024px){
+}
+@media(max-width: 768px){
+}
+@media(max-width: 667px){
+	.arrivals, .departure, .accommodation_booked {
+		padding: 12px 5px;
+	}
+	.accommodation_booked .text_value {
+		font-size: 22px;
+	}
+	.rep_icon {
+		font-size: 20px;
+	}
+	.text_name {
+		font-size: 14px;
+		word-wrap: break-word;
+	}
+	.reservation_box {
+		overflow: auto;
+	}
+	.reservation_box .box_content #myTab {
+		overflow: auto;
+	}
+	.nav-tabs .nav-item {
+		margin-right: 0;
+		display: block;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.calendar_table {
+		overflow: auto;
+	}
+	.arrivals, .departure, .accommodation_booked {
+		margin: 0 3% 10px 0;
+		width: 47%;
+		max-width: 47%;
+		flex: 100%;
+	}
+	.user_booking_calendar {
+		display: none;
+	}
+	.main-header {
+		padding: 10px 0;
+	}
+	.mt-9 {
+		margin-top: 60px !important;
+	}
+	time {
+		font-size: 14px;
+	}
+	.dashboard_header {
+		padding: 0;
+	}
+	.dashboard_header {
+		margin: 10px 0;
+	}
+	.reservation_box .tab-pane {
+		padding: 0;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding: 5px;
+	}
+	.box_header h1 {
+		font-size: 15px;
+	}
+	.mt-9 {
+		margin-top: 50px !important;
+	}
+	table.dataTable tbody td, table.dataTable tbody th {
+		padding: 8px 10px;
+		font-size: 12px;
+	}
+	table.dataTable thead td, table.dataTable thead th {
+		padding: 10px;
+		font-size: 12px;
+	}
+	.navbar-collapse {
+		right: auto;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding: 10px;
+	}
+	.username_admin .dropdown-menu {
+		right: 0 !important;
+		left: 0 !important;
+		min-width: auto;
+		width: 243px;
+		z-index: 9999999;
+	}
+	li.username_admin a {
+		cursor: pointer;
+		padding: 5px 10px;
+	}
+	.navbar-collapse::after {
+		right: auto !important;
+	}
+	.width_50 {
+		width: 100%;
+	}
+	.tac_form_data {
+		width: 100%;
+	}
+}
+@media(max-width: 460px){
+}
